@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info px-5">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex justify-content-end w-100">
+                <li class=" nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/lista.html">Lista de personajes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container mt-5 bg-warning p-3 text-white">
+
+        <h1 class="text-center my-5 ">Registro de autos</h1>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-4">
+                <form id="formRegistro">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Marca *</label>
+                        <select class="form-control" id="brand">
+                          <option>Lamborghini</option>
+                          <option>Ferrari</option>
+                          <option>Audi</option>
+                          <option>koenigsegg</option>
+                          <option>McLaren</option>
+                          <option>Porsche</option>
+                        </select>
+                      </div>
+                    <div class="form-group">
+                        <label for="name">Modelo <small class="red">*</small> </label>
+                        <input type="text" class="form-control validarInput" id="name" required maxlength="20">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="model">Año</label>
+                        <input type="text" class="form-control validarInput" id="model">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="id">PLaca</label>
+                        <input type="text" class="form-control validarInput" id="id">
+                    </div>
+
+                    <button type="submit" class="btn btn-info">Registrar</button>
+                </form>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-6">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./scripts/script.js"></script>
+    
+</body>
+</html>
